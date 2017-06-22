@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stepcounter.administrator.mysteps.MainActivity">
+
+    <TextView
+        android:id="@+id/stepssincereboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <TextView
+        android:id="@+id/stepString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/stepssincereboot"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:text="Counting Steps..."
+        app:layout_editor_absoluteY="160dp"
+        android:layout_marginRight="50dp"
+        tools:layout_editor_absoluteY="160dp"
+        app:layout_constraintWidth_default="spread"/>
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/stepssincereboot"
+        android:text="Direction"
+        tools:layout_editor_absoluteY="160dp"
+        android:layout_marginLeft="29dp" />
+
+</android.support.constraint.ConstraintLayout>
